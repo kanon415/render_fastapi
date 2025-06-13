@@ -2,6 +2,8 @@ from typing import Optional
 
 from fastapi import FastAPI
 import random
+from fastapi.responses import HTMLResponse #インポート
+
 
 app = FastAPI()
 
@@ -44,3 +46,20 @@ def omikuji():
     fortune = omikuji_list[random.randrange(10)]
     message = messages.get(fortune)
     return {fortune:message}
+
+
+### コードいろいろ... ###
+
+@app.get("/index")
+def index():
+    html_content = """
+    <html>
+        <head>
+            <title>Some HTML in here</title>
+        </head>
+        <body>
+            <h1>Look ma! HTML!</h1>
+        </body>
+    </html>
+    """
+    return HTMLResponse(content=html_content, status_code=200)
