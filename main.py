@@ -40,12 +40,12 @@ def omikuji():
         "小凶。注意が必要な日です。慎重に行動しましょう。"
         "大凶。厳しい状況が訪れるかもしれませんが、乗り越えましょう。"
     ]
-    messages{"":""}
-    for i in range(0:len(omikuji_list)):
-        messages  = {omikujiList(i):messageList(i)}
-    fortune = omikuji_list[random.randrange(10)]
-    message = messages.get(fortune)
-    return {fortune:message}
+    #messages{"":""}
+    #for i in range(0:len(omikuji_list)):
+    #    messages  = {omikujiList(i):messageList(i)}
+    #fortune = omikuji_list[random.randrange(10)]
+    #message = messages.get(fortune)
+    return omikuji_list[random.randrange(10)]
 
 
 ### コードいろいろ... ###
