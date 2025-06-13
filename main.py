@@ -59,6 +59,8 @@ def index():
         </head>
         <body>
             <h1>Look ma! HTML!</h1>
+            <h2>I'm hungry...</h2>
+            <a url="https://www.keishicho.metro.tokyo.lg.jp/">check me</a>
         </body>
     </html>
     """
