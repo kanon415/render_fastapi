@@ -59,12 +59,15 @@ def omikuji():
 def index():
     html_content = """
     <html>
-        <head>
+        head>
             <title>Some HTML is here</title>
             <meta charset="UTF-8">
             <style>
             h1{
-            bockground-color: #ff0000
+            background-color: #f000aa
+            }
+            h2{
+                background-color: #00ff00
             }
             </style>
         </head>
@@ -72,6 +75,14 @@ def index():
             <h1>Look me! HTML!</h1>
             <h2>I'm hungry...</h2>
             <a href="https://www.keishicho.metro.tokyo.lg.jp/">check me</a>
+            <h3>ネットワークのプログラムが全然覚えられません！</h3>
+            <p>
+                関数名長くて読む気になれないし頭に入ってこない…<br>
+                BufferedReaderすらコンストラクタのカッコ内が長くて未だに覚えられない()<br>
+                Scannerは使えるようになった（はず）<br>
+                調べながら写経するしかないですか…？<br>
+                作りたいものがあるわけじゃないから、課題以外でコーディングするモチベもないです。
+            </p>
         </body>
     </html>
     """
