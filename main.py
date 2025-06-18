@@ -59,7 +59,7 @@ def omikuji():
 def index():
     html_content = """
     <html>
-        head>
+        <head>
             <title>Some HTML is here</title>
             <meta charset="UTF-8">
             <style>
