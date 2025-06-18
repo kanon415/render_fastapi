@@ -50,7 +50,7 @@ def omikuji():
       messages[omikuji_list[i]]  = message_list[i]
     fortune = omikuji_list[random.randrange(10)]
     message = messages.get(fortune)
-    result = {"result"  : f'{fortune}',"message" : f'{message}'}
+    result = {\\n   "result"  : f'{fortune},\\n "message" : {message}'\\n}
     return result
 
 ### コードいろいろ... ###
@@ -63,6 +63,7 @@ def index():
             <title>Some HTML is here</title>
         </head>
         <body>
+            <background>
             <h1>Look me! HTML!</h1>
             <h2>I'm hungry...</h2>
             <a href="https://www.keishicho.metro.tokyo.lg.jp/">check me</a>
