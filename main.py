@@ -45,7 +45,7 @@ def omikuji():
     #    messages  = {omikujiList(i):messageList(i)}
     #fortune = omikuji_list[random.randrange(10)]
     #message = messages.get(fortune)
-    return omikuji_list[random.randrange(10)]
+    return {"result" : omikuji_list[random.randrange(10)]}
 
 
 ### コードいろいろ... ###
