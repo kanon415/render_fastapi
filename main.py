@@ -61,9 +61,14 @@ def index():
     <html>
         <head>
             <title>Some HTML is here</title>
+            <meta charset="UTF-8">
+            <style>
+            h1{
+            bockground-color: #ff0000
+            }
+            </style>
         </head>
         <body>
-            <background>
             <h1>Look me! HTML!</h1>
             <h2>I'm hungry...</h2>
             <a href="https://www.keishicho.metro.tokyo.lg.jp/">check me</a>
