@@ -50,7 +50,7 @@ def omikuji():
       messages[omikuji_list[i]]  = message_list[i]
     fortune = omikuji_list[random.randrange(10)]
     message = messages.get(fortune)
-    result = f'{"result"  : {fortune},  "message" : {message} }'
+    result = '{"result"  : '+fortune+',"message" : '+message+'}'
     return result
 
 ### コードいろいろ... ###
